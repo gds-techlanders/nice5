@@ -1,5 +1,15 @@
 name: second_pipeline
-on: pull_request
+on: 
+  pull_request: 
+    branches:
+      - main
+  push: 
+    branches:
+      - main
+      - test
+
+  workflow_dispatch:
+  
 jobs:
   job1: 
     runs-on: ubuntu-latest
