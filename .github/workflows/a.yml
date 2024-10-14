@@ -8,4 +8,10 @@ jobs:
         run: echo "Hello, Commit happened successfully"
       - name: step2
         run: echo "step2"
-    
+      - name: step3
+        run: |
+          echo "hello from step3"
+          hostname
+          pwd
+          id
+          
